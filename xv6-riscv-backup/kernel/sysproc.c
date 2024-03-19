@@ -110,7 +110,8 @@ uint64 sys_getMagic(void) {
 uint64 sys_getProcName(void) {
   char name[16]; 
   char* currName = myproc()->name;
-  safestrcpy(name, currName, sizeof(currName));
+  safestrcpy(name, currName, 16);
+  //safestrcpy(name, currName, sizeof(currName));
   printf("%s", name);
   return 0;
 }
@@ -119,6 +120,7 @@ uint64 sys_modProcName(void) {
   char name[16];
   char* currName = myproc()->name;
   argstr(0, name, 16);
-  safestrcpy(currName, name, sizeof(currName));
+  safestrcpy(currName, name, 16);
+  //safestrcpy(currName, name, sizeof(currName));
   return 0;
 }

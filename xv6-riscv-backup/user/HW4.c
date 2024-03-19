@@ -12,40 +12,57 @@
 #include "user/user.h"
 
 int main(int argc, char *argv[]){
-  int magic; // variable to store the magic number
-
+  // variable to store the magic number
+  int magic; 
   magic = getMagic();
   printf("current magic number is the following: %d\n", magic);
+  printf("\n");
 
-  incMagic(15);  // increment the magic number by 3
-
+  // increment the magic number by 15
+  printf("---Changing magic number by 15---\n");
+  incMagic(15);  
   magic = getMagic();
   printf("current magic number is the following: %d\n", magic);
+  printf("\n");
 
   // now check the system calls for process name
   printf("current process name: ");
 
-  getProcName();  // getProcName should print the name to the screen
+  // getProcName should print the name to the screen
+  getProcName();    
+  printf("\n"); 
 
-  printf("\n");  // still need a new line
-
-  modProcName("newName");  // now change the proc name to newName
+  printf("---Changing Process Name to newName---\n");
+  // now change the proc name to newName
+  modProcName("newName");  
 
   printf("The process name is now: ");
   getProcName();
   printf("\n");
+  printf("\n");
 
+  printf("---Changing Process Name to CooperMaitoza---\n");
+  // now change the proc name to [testName]
+  modProcName("CooperMaitoza");  
+
+  printf("The process name is now: ");
+  getProcName();
+  printf("\n");
+  printf("\n");
+
+  printf("---Retreiving the current magic number---\n");
   magic = getMagic();
   printf("current magic number is the following: %d\n",magic);
+  printf("\n");
 
-  // Now change the magic number back to what is was by incrementing
-  // by -3
+  printf("---Changing magic number to -3---\n");
   incMagic(-3);
-  
   magic = getMagic();
   printf("current magic number is the following: %d\n",magic);
+  printf("\n");
 
   // adding by 4
+  printf("---Adding 4 to magic number---\n");
   incMagic(getMagic() + 4);
 
   magic = getMagic();

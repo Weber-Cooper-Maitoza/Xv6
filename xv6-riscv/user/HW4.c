@@ -16,12 +16,14 @@ int main(int argc, char *argv[]){
   int magic; 
   magic = getMagic();
   printf("current magic number is the following: %d\n", magic);
+  printf("\n");
 
   // increment the magic number by 15
   printf("---Changing magic number by 15---\n");
   incMagic(15);  
   magic = getMagic();
   printf("current magic number is the following: %d\n", magic);
+  printf("\n");
 
   // now check the system calls for process name
   printf("current process name: ");
@@ -37,23 +39,27 @@ int main(int argc, char *argv[]){
   printf("The process name is now: ");
   getProcName();
   printf("\n");
+  printf("\n");
 
-  printf("---Changing Process Name to CooperMaitozaProcess---\n");
+  printf("---Changing Process Name to CooperMaitoza---\n");
   // now change the proc name to [testName]
-  modProcName("CooperMaitozaProcess");  
+  modProcName("CooperMaitoza");  
 
   printf("The process name is now: ");
   getProcName();
+  printf("\n");
   printf("\n");
 
   printf("---Retreiving the current magic number---\n");
   magic = getMagic();
   printf("current magic number is the following: %d\n",magic);
+  printf("\n");
 
   printf("---Changing magic number to -3---\n");
   incMagic(-3);
   magic = getMagic();
   printf("current magic number is the following: %d\n",magic);
+  printf("\n");
 
   // adding by 4
   printf("---Adding 4 to magic number---\n");
