@@ -19,7 +19,7 @@ int main(int argc, char *argv[]){
   printf("\n");
 
   // increment the magic number by 15
-  printf("---Changing magic number by 15---\n");
+  printf("---Increment magic number by 15---\n");
   incMagic(15);  
   magic = getMagic();
   printf("current magic number is the following: %d\n", magic);
@@ -55,7 +55,7 @@ int main(int argc, char *argv[]){
   printf("current magic number is the following: %d\n",magic);
   printf("\n");
 
-  printf("---Changing magic number to -3---\n");
+  printf("---Decrementing magic number by -3---\n");
   incMagic(-3);
   magic = getMagic();
   printf("current magic number is the following: %d\n",magic);
@@ -63,7 +63,7 @@ int main(int argc, char *argv[]){
 
   // adding by 4
   printf("---Adding 4 to magic number---\n");
-  incMagic(getMagic() + 4);
+  incMagic(4);
 
   magic = getMagic();
   printf("current magic number is the following: %d\n",magic);

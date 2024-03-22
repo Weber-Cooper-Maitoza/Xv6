@@ -95,7 +95,7 @@ uint64 sys_incMagic(void) {
   push_off();
   uint64 value;
   argaddr(0, &value);
-  mycpu()->magic = value;
+  mycpu()->magic += value;
   pop_off();
   return 0;
 }
